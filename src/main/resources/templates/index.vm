@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Good Morning | Your Daily Motivation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<section id="main">
+				 <h3>Subscribe to</h3>
+						<hr />
+						<h2>Good Morning</h2>
+                    <form action="http://penguin.linux.test:4567/input" method="POST">
+							<div class="fields">
+								<div class="field">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="field">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div> 
+							</div>
+								<div class="field">
+									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+								</div>
+							<ul class="actions special">
+								<input type="submit" value="Get Started">
+							</ul>
+						</form>
+						<hr />
+						<footer>
+							<ul class="icons">
+								<li><a href="http://www.twitter.com/iamtravisw" class="fa-twitter">Twitter</a></li>
+								<li><a href="http://www.instagram.com/iamtravisw" class="fa-instagram">Instagram</a></li>
+								<li><a href="http://www.facebook.com/iamtravisw" class="fa-facebook">Facebook</a></li>
+								<br><br> 
+
+								<div class="container">
+										<div class="interior">
+												<a class="btn" href="#open-modal">What is Good Morning?</a>
+										</div>
+									  </div>
+									  <div id="open-modal" class="modal-window">
+										<div>
+										  <a href="#modal-close" title="Close" class="modal-close">Close</a>
+										  <h1>So what is it?</h1>
+										<div><HR WIDTH="100%">Good Morning is a web application that emails you every morning with a motiviational photo. Start your day off with positivity by signing up for our mailing list.
+											<br><br>
+											Read your inspirational quotes during your morning coffee, or wait until you get to work each morning for a little pick me up. 
+											<br><br>
+											At any time you can unsubscribe from the mailing list with a link in your daily email. Good Morning does not distribute your personal information to any 3rd parties.
+											   <a href="mailto:iamtravisw@gmail.com?subject=Questions about Good Morning" target="_blank"><br><br>Still not sure?</div></a><br> That's ok.
+										</div>
+									  </div>
+							</ul>
+						</footer>
+					</section>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright"> 
+							<a href="http://iamtravisw.com" target="_blank">Travis Woodward</div></a>
+						</ul>
+					</footer>
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+	</body>
+</html>

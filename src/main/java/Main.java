@@ -1,27 +1,39 @@
-import static spark.Spark.*;
+
 import java.sql.*;
 import java.util.Date;
+import static spark.Spark.*;
+
+
+import java.util.HashMap;
+import java.util.Map;
+
+import spark.ModelAndView;
+import spark.Spark;
+
+import static spark.Spark.get;
+import spark.template.velocity.*;
+
+// Error:(14, 31) java: package spark.template.velocity does not exist
+
 
 public class Main {
 
     public static void main(String[] args) {
 
+        staticFiles.location("/public");
 
-        get("/input", (request, response) -> {
-            return "Hello: " + request.params(":email");
+        get("/", (rq, rs) -> {
+            Map<String, Object> model = new HashMap<>();
+            return render(model, "templates/index.vm");
         });
 
-        get("/goodmorning/public/index.html", (request, response) -> {
-            return "Hello: " + request.params(":name");
-        });
-
+        // route to user subscribing
         post("/input", (request, response) -> {
             String a, b;
             a = request.queryParams("name");
             b = request.queryParams("email");
             return String.join(" AND ", a, b);
         });
-
     }
 
     public static void sendData(String[] args) {
@@ -46,7 +58,7 @@ public class Main {
             System.out.println("Inserting...");
 
             // insert statement
-            String query = "insert into CharacterBasics (Name, Email, Subscribed, AddDate, ModDate)"
+            String query = "insert into Users (Name, Email, Subscribed, AddDate, ModDate)"
                     + "values (?, ?, ?, ?, ?)";
             PreparedStatement insertUsers = conn.prepareStatement(query);
             insertUsers.setString(1, name);
@@ -65,5 +77,9 @@ public class Main {
             System.err.println("Got an exception!");
             System.err.println(e.getMessage());
         }
+    }
+
+    public static String render(Map<String, Object> model, String templatePath) {
+        return new VelocityTemplateEngine().render(new ModelAndView(model, templatePath));
     }
 }
