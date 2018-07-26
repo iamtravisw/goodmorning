@@ -17,7 +17,6 @@ public class Main {
         Date moddate = new Date();
 
         staticFiles.location("/public");
-        redirect.post("/input", "/thanks"); // Never let the end user see the post
 
             // this is my home page
             get("/", (rq, rs) -> {
@@ -29,6 +28,18 @@ public class Main {
             get("/thanks", (rq, rs) -> {
                 Map<String, Object> model = new HashMap<>();
                 return render(model, "templates/thanks.vm");
+            });
+
+            // duplicate emails are not allowed
+            get("/existing", (rq, rs) -> {
+                Map<String, Object> model = new HashMap<>();
+                return render(model, "templates/existing.vm");
+            });
+
+            // oops page, for the unexpected
+            get("/oops", (rq, rs) -> {
+                Map<String, Object> model = new HashMap<>();
+                return render(model, "templates/oops.vm");
             });
 
             // when someone unsubs, take them here
@@ -43,8 +54,7 @@ public class Main {
                 a = request.queryParams("name");
                 b = request.queryParams("email");
 
-                if(a != null){
-                    System.out.println(a);
+                if(a != null && b != null){
 
                     try {
                         // connect to database
@@ -68,22 +78,32 @@ public class Main {
                         insertUsers.setString(5, moddate.toString());
                         insertUsers.execute(); // execute
 
-                        System.out.println("Succesfully added");
+                        System.out.println("Successfully added "+a+" / "+b);
 
                         conn.close(); // close the connection
                         System.out.println("DB Connection has been closed.");
+                        response.redirect("/thanks"); // Take the user to the Thank You page
 
                     } catch (Exception e) {
+                        final String url = "jdbc:mysql://localhost:3306/GoodMorning";
+                        final String user = "root";
+                        final String password = "Pepper";
+
+                        final Connection conn = DriverManager.getConnection(url, user, password);
+                        if (conn != null) {
+                        }
                         System.err.println("Got an exception!");
                         System.err.println(e.getMessage());
-
+                        response.redirect("/existing"); // Email is a unique key
+                        conn.close(); // close the connection
+                        System.out.println("DB Connection has been closed.");
                     }
-                }else {
-                    System.out.println("Waiting...");
+                } else {
+                    System.out.println("Name or Email not entered...");
+                    response.redirect("/oops"); // How did you even get here?
                 }
                return String.join(" / ", a, b);
             });
-        System.out.println("main done");
     }
     public static String render(Map<String, Object> model, String templatePath) {
         return new VelocityTemplateEngine().render(new ModelAndView(model, templatePath));
