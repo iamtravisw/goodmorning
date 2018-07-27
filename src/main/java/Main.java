@@ -66,7 +66,7 @@ public class Main {
                         if (conn != null) {
                         }
                         // sql insert statement
-                        final String query = "insert into Users (Name, Email, SignUpDate)"
+                        final String query = "insert into GoodMorning.Users (Name, Email, SignUpDate)"
                                 + "values (?, ?, ?)";
                         final PreparedStatement insertUsers = conn.prepareStatement(query);
 
