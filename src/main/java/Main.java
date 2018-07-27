@@ -50,11 +50,11 @@ public class Main {
 
             // get name and email from user input
             post("/input", (request, response) -> {
-                String a, b;
-                a = request.queryParams("name");
-                b = request.queryParams("email");
+                String name, email;
+                name = request.queryParams("name");
+                email = request.queryParams("email");
 
-                if(a != null && b != null){
+                if(name != null && email != null){
 
                     try {
                         // connect to database
@@ -66,19 +66,17 @@ public class Main {
                         if (conn != null) {
                         }
                         // sql insert statement
-                        final String query = "insert into Users (Name, Email, Subscribed, AddDate, ModDate)"
-                                + "values (?, ?, ?, ?, ?)";
+                        final String query = "insert into Users (Name, Email, SignUpDate)"
+                                + "values (?, ?, ?)";
                         final PreparedStatement insertUsers = conn.prepareStatement(query);
 
                         // sql insert values
-                        insertUsers.setString(1, a);
-                        insertUsers.setString(2, b);
-                        insertUsers.setString(3, subscribed);
-                        insertUsers.setString(4, adddate.toString());
-                        insertUsers.setString(5, moddate.toString());
+                        insertUsers.setString(1, name);
+                        insertUsers.setString(2, email);
+                        insertUsers.setString(3, adddate.toString());
                         insertUsers.execute(); // execute
 
-                        System.out.println("Successfully added "+a+" / "+b);
+                        System.out.println("Successfully added "+name+" / "+email);
 
                         conn.close(); // close the connection
                         System.out.println("DB Connection has been closed.");
@@ -99,10 +97,10 @@ public class Main {
                         System.out.println("DB Connection has been closed.");
                     }
                 } else {
-                    System.out.println("Name or Email not entered...");
+                    System.out.println("Name or SubDateSSubsdEmail not entered...");
                     response.redirect("/oops"); // How did you even get here?
                 }
-               return String.join(" / ", a, b);
+               return String.join(" / ", name, email);
             });
     }
     public static String render(Map<String, Object> model, String templatePath) {
