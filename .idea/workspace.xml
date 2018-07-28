@@ -4,14 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/Main.java" line="77" mnemonic="5" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53bf732-e2c1-4244-b12a-e94d22b8db5a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rotation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Rotation.class" beforeDir="false" />
-    </list>
+    <list default="true" id="b53bf732-e2c1-4244-b12a-e94d22b8db5a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,20 +19,8 @@
       <file leaf-file-name="DailyEmail.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DailyEmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="103" column="72" lean-forward="true" selection-start-line="103" selection-start-column="72" selection-end-line="103" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+            <state relative-caret-position="-120">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,14 +157,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="goodmorning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goodmorning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -222,7 +195,7 @@
   <component name="RunManager" selected="Application.DailyEmail">
     <configuration name="DailyEmail" type="Application" factoryName="Application">
       <envs>
-        <env name="SENDGRID_API_KEY" value="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" />
+        <env name="SENDGRID_API_KEY" value="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" />
         <env name="DB_URL" value="jdbc:mysql://localhost:3306/GoodMorning" />
         <env name="DB_USER" value="root" />
         <env name="DB_PASSWORD" value="Pepper" />
@@ -233,7 +206,6 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="SENDGRID_API_KEY" value="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" />
         <env name="DB_URL" value="jdbc:mysql://localhost:3306/GoodMorning" />
         <env name="DB_USER" value="root" />
         <env name="DB_PASSWORD" value="Pepper" />
@@ -252,19 +224,6 @@
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="goodmorning" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Rotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="SENDGRID_API_KEY" value="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" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="Rotation" />
-      <module name="goodmorning" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="SendGridExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SendGridExample" />
-      <module name="goodmorning" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -310,14 +269,10 @@
     <list>
       <item itemvalue="Application.DailyEmail" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Rotation" />
-      <item itemvalue="Application.SendGridExample" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SendGridExample" />
-        <item itemvalue="Application.Rotation" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -353,16 +308,15 @@
       <workItem from="1532740837011" duration="2456000" />
       <workItem from="1532743791705" duration="10440000" />
       <workItem from="1532776326936" duration="9885000" />
-      <workItem from="1532786262042" duration="5549000" />
+      <workItem from="1532786262042" duration="6651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131418000" />
+    <option name="totallyTimeSpent" value="132520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="40" width="1920" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -374,11 +328,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49791667" visible="true" weight="0.4053476" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49791667" visible="true" weight="0.4053476" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103125" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -612,18 +566,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DailyEmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="103" column="72" lean-forward="true" selection-start-line="103" selection-start-column="72" selection-end-line="103" selection-end-column="72" />
+        <state relative-caret-position="-120">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
