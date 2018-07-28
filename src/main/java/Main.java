@@ -11,6 +11,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Be safe out there
+        String dbURL = System.getenv("DB_URL");
+        String dbUser = System.getenv("DB_USER");
+        String dbPassword = System.getenv("DB_PASSWORD");
+
         // For MySQL Insert
         String subscribed = "Y";
         Date adddate = new Date();
@@ -58,9 +63,9 @@ public class Main {
 
                     try {
                         // connect to database
-                        final String url = "jdbc:mysql://localhost:3306/GoodMorning";
-                        final String user = "root";
-                        final String password = "Pepper";
+                        final String url = dbURL;
+                        final String user = dbUser;
+                        final String password = dbPassword;
 
                         final Connection conn = DriverManager.getConnection(url, user, password);
                         if (conn != null) {
