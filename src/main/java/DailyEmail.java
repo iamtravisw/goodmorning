@@ -87,7 +87,7 @@ public class DailyEmail {
                                 Email to = new Email(gmUser);
 
                                 String htmlStart = "<html><body><p>Here is your daily motivation.</p><p><img alt=\"\" title=\"\" src=\"";
-                                String htmlEnd = "\" style=\"border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;\" ></p><p><a href=\"mailto:iamtravisw@gmail.com\">Report a problem</a>.<br>Tired of GoodMorning? <a href=\"#\">Unsubscribe here</a>.</p></body></html>";
+                                String htmlEnd = "\" style=\"border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;\" ></p><p><a href=\"mailto:iamtravisw@gmail.com\">Report a problem</a>.<br>Tired of GoodMorning? <a href=\"http://goodmorning.email/unsubscribe\">Unsubscribe here</a>.</p></body></html>";
 
                                 String html_content = String.format("%shttps://storage.googleapis.com/goodmorning-photos/%s%s", htmlStart, randomURL, htmlEnd);
                                 Content content = new Content("text/html", html_content);

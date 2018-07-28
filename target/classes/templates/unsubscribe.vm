@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Good Morning | Your Daily Motivation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+    <section id="main">
+        <h1>Leaving?</h1>
+        <h4>Just enter your email</h4>
+
+        <form action="/leaving" method="POST">
+            <div class="fields">
+                <div class="field">
+                    <input type="email" name="emailBye" id="emailBye" placeholder="Email" required />
+                </div>
+            </div>
+            <ul class="actions special">
+                <input type="submit" value="See ya later">
+            </ul>
+        </form>
+        <hr />
+        <footer>
+            <a href="/"> We'll miss you.</a>
+                </ul>
+        </footer>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <a href="http://iamtravisw.com" target="_blank">Travis Woodward</div></a>
+
+<!-- Scripts -->
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
+</body>
+</html>
