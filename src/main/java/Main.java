@@ -29,6 +29,12 @@ public class Main {
             return render(model, "templates/index.vm");
         });
 
+        // favicon
+        get("/favicon", (rq, rs) -> {
+            Map<String, Object> model = new HashMap<>();
+            return render(model, "templates/index.vm");
+        });
+
         // when someone subs, take them here
         get("/thanks", (rq, rs) -> {
             Map<String, Object> model = new HashMap<>();

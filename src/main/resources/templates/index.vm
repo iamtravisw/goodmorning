@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="icon" href="/sun.ico">
 	</head>
 
 	<body class="is-preload">
@@ -18,9 +19,9 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<section id="main">
-				 <h3>Subscribe to</h3>
+                    <h2>Good Morning<font color="red" size="4"><sup> BETA</sup></font></h2>
 						<hr />
-						<h2>Good Morning</h2>
+                    <h3>Subscribe</h3>
                     <form action="/input" method="POST">
 							<div class="fields">
 								<div class="field">
@@ -41,10 +42,9 @@
 						<footer>
 							<ul class="icons">
 								<li><a href="http://www.twitter.com/iamtravisw" class="fa-twitter">Twitter</a></li>
-								<li><a href="http://www.instagram.com/iamtravisw" class="fa-instagram">Instagram</a></li>
-								<li><a href="http://www.facebook.com/iamtravisw" class="fa-facebook">Facebook</a></li>
-								<br><br> 
-
+								<li><a href="http://www.github.com/iamtravisw" class="fa-github">Github</a></li>
+								<li><a href="http://www.linkedin.com/in/iamtravisw" class="fa-linkedin">Linkedin</a></li>
+							</ul>
 								<div class="container">
 										<div class="interior">
 												<a class="btn" href="#open-modal">What is Good Morning?</a>
@@ -53,14 +53,40 @@
 									  <div id="open-modal" class="modal-window">
 										<div>
 										  <a href="#modal-close" title="Close" class="modal-close">Close</a>
-										  <h1>So what is it?</h1>
-										<div><HR WIDTH="100%">Good Morning is a web application that emails you every morning with a motiviational photo. Start your day off with positivity by signing up for our mailing list.
-											<br><br>
-											Read your inspirational quotes during your morning coffee, or wait until you get to work each morning for a little pick me up. 
-											<br><br>
-											At any time you can unsubscribe from the mailing list with a link in your daily email. Good Morning does not distribute your personal information to any 3rd parties.
-											   <a href="mailto:iamtravisw@gmail.com?subject=Questions about Good Morning" target="_blank"><br><br>Still not sure?</div></a><br> That's ok.
-										</div>
+                                            <h1>So what is it?</h1>
+										<div><HR WIDTH="100%">Good Morning is a web application that emails you every morning with a motiviational photo. Start your day off with positivity by signing up for our mailing list. <br>
+
+                                            <p> <center>
+											<div class="w3-container">
+                                                <div class="w3-content w3-section" style="max-width:180px">
+                                                    <img class="mySlides w3-animate-top" src="/images/1.jpg" style="width:100%">
+                                                    <img class="mySlides w3-animate-bottom" src="images/2.jpg" style="width:100%">
+                                                    <img class="mySlides w3-animate-top" src="images/3.jpg" style="width:100%">
+                                                    <img class="mySlides w3-animate-bottom" src="images/4.jpg" style="width:100%">
+                                                    <img class="mySlides w3-animate-bottom" src="images/5.jpg" style="width:100%">
+                                                </div>
+                                                <script>
+                                                    var myIndex = 0;
+                                                    carousel();
+
+                                                    function carousel() {
+                                                        var i;
+                                                        var x = document.getElementsByClassName("mySlides");
+                                                        for (i = 0; i < x.length; i++) {
+                                                            x[i].style.display = "none";
+                                                        }
+                                                        myIndex++;
+                                                        if (myIndex > x.length) {myIndex = 1}
+                                                        x[myIndex-1].style.display = "block";
+                                                        setTimeout(carousel, 2500);
+                                                    }
+                                                </script> </center>
+												</p>
+
+											<a href="http://goodmorning.email/unsubscribe" target="_blank">You can unsubscribe here</a> or via any email. Good Morning does not distribute your personal information to any 3rd parties.
+											<a href="mailto:iamtravisw@gmail.com?subject=Questions about Good Morning" target="_blank"><br><br>Still not sure?</a>
+												</div>
+											</div>
 									  </div>
 							</ul>
 						</footer>
