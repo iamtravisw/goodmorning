@@ -49,7 +49,8 @@
     <!-- Footer -->
     <footer id="footer">
         <ul class="copyright">
-            <a href="http://iamtravisw.com" target="_blank">Travis Woodward</div></a>
+            <a href="http://iamtravisw.com" target="_blank">Travis Woodward</a><br>
+            <a href="/tos">ToS</a> | <a href="/pp">PP</a>
 </ul>
 </footer>
 </div>

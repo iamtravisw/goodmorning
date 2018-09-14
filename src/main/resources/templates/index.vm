@@ -20,8 +20,11 @@
 			<div id="wrapper">
 				<section id="main">
 				 <h3>Subscribe to</h3>
-						<hr />
-					<h2>Good Morning<font color="red" size="4"><sup> BETA</sup></font></h2>
+					<h2>Good Morning</h2>
+                    <hr/>
+                    
+                    
+                    
                     <form action="/input" method="POST">
 							<div class="fields">
 								<div class="field">
@@ -38,6 +41,10 @@
                                 <input type="submit" value="Get Started">
 							</ul>
 						</form>
+                        
+                        
+                        
+                        
 						<hr />
 						<footer>
 							<ul class="icons">
@@ -94,7 +101,9 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright"> 
-							<a href="http://iamtravisw.com" target="_blank">Travis Woodward</div></a>
+							<a href="http://iamtravisw.com" target="_blank">Travis Woodward</a><br>
+        					<a href="/tos">ToS</a> | <a href="/pp">PP</a>
+       					 </div>
 						</ul>
 					</footer>
 				</div>

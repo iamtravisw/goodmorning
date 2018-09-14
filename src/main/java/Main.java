@@ -65,6 +65,18 @@ public class Main {
             return render(model, "templates/unsubscribe.vm");
         });
 
+        // terms of service
+        get("/tos", (rq, rs) -> {
+            Map<String, Object> model = new HashMap<>();
+            return render(model, "templates/tos.vm");
+        });
+
+        // privacy policy
+        get("/pp", (rq, rs) -> {
+            Map<String, Object> model = new HashMap<>();
+            return render(model, "templates/pp.vm");
+        });
+
         // get name and email from user input
         post("/input", (request, response) -> {
             String name, email;
