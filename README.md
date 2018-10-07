@@ -1,5 +1,5 @@
 # Good Morning
-**GoodMorning.email** is a website that I built so that people could wake up every morning with a little bit of motiviation. Simply enter your email at http://goodmorning.email and each morning you will wake up to a new "meme-like" image with motiviational text.
+**GoodMorning.email** is a website that I built so that people could wake up every morning with a little bit of motivation. Simply [enter your email](http://goodmorning.email) and each morning you will wake up to a new "meme-like" image with motiviational text.
 
 ![GoodMorning](https://4.bp.blogspot.com/-dePevryza6o/W4TgOilrCpI/AAAAAAAAHo0/xgN9jpNUHGQcunbiKrkEnD3qtss8SzC9QCLcBGAs/s640/goodmorning.jpg)
 
