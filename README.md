@@ -1,7 +1,7 @@
 # Good Morning
 **GoodMorning.email** is a website that I built so that people could wake up every morning with a little bit of motivation. Simply [enter your email](http://goodmorning.email) and each morning you will wake up to a new "meme-like" image with motiviational text.
 
-![GoodMorning](https://i.imgur.com/Vd8HaWh.jpg)
+![GoodMorning](https://i.imgur.com/0lTWQLa.jpg)
 
 ## Getting Started
 [GoodMorning.email](http://goodmorning.email) is a web application and readily available for anyone to use. All you need to do is sign up. You can unsubscribe at anytime from the daily email thread.
