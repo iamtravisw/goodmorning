@@ -33,4 +33,6 @@ This project is not currently accepting contributions.
 If you have any questions or concerns about this program, please contact me on my [official website](https://www.iamtravisw.com/p/goodmorning.html) by leaving a comment.
 
 ## Acknowledgments
-html5up.net | [@ajlkn](https://html5up.net/identity) html, css, sass template.
+html5up.net | [@ajlkn](https://html5up.net/identity) html, css, sass template.  
+[Pexels.com](https://pexels.com) for all sourced images.  
+My lovely wife, for adding the text to images.  
