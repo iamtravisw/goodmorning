@@ -27,7 +27,7 @@
 - [SendGrid](https://sendgrid.com)
 
 ## Contributing
-- This project is not currently accepting contributions.
+This project is not currently accepting contributions.
 
 ## Questions/ Support
 If you have any questions or concerns about this program, please contact me on my [official website](https://www.iamtravisw.com/p/goodmorning.html) by leaving a comment.
